@@ -36,3 +36,11 @@ echo "Dernier instruction";
 <?php else: ?>
     sinon, ceci sera affiché.
  <?php endif; ?>       
+
+ Exemple #1 montrant que la balise fermente englobe la nouvelle ligne qui sapi_windows_cp_is_utf8
+ 
+ 
+ <?php echo "Some text"; ?>
+ No newline
+
+ <?= "But newline now" ?>
