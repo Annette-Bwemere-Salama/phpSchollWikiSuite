@@ -22,4 +22,17 @@ echo "Bonjour le monde!";
 
 echo "Dernier instruction";
 
+?>
+
 // le script se termine ici, sans la balise de fermeture PHP
+
+
+<p>Ceci sera ignoré par PHP Et affiché au navigateur</p>
+<?php echo 'Alors que ceci sera analysé par PHP'; ?>
+<p>Ceci sera aussi ignore par PHP et affiché au navigateur.</p>
+
+<?php if ($expression == true): ?>
+    ceci sera afficher si l'$expression est vraie.
+<?php else: ?>
+    sinon, ceci sera affiché.
+ <?php endif; ?>       
