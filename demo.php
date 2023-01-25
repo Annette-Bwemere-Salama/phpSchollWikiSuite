@@ -33,6 +33,7 @@ echo "Dernier instruction";
 
 <?php if ($expression == true): ?>
     ceci sera afficher si l'$expression est vraie.
+    
 <?php else: ?>
     sinon, ceci sera affiché.
  <?php endif; ?>       
@@ -44,3 +45,6 @@ echo "Dernier instruction";
  No newline
 
  <?= "But newline now" ?>
+
+
+ 
