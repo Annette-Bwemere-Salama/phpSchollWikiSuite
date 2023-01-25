@@ -100,6 +100,23 @@ $classe = [
 // echo $classe[1]['notes'][2]
 
 $action = (int)readline('Entrez votre note:(1: "ATTQUER", 2:"DEFFENDRE", 3:"Passer à Action")');
+
+
+switch($action){
+    case 1:
+        echo 'J\'Attaque !';
+        break;
+    case 2:
+        echo 'Je Défend';
+        break;
+     case 3:
+            echo 'Je ne fait Absolument Rien';
+            break;
+    default:
+        echo 'Commande Inconuue';
+
+}
+
 if ($action === 1) {
     # code...
     echo 'J\'attaque!';
