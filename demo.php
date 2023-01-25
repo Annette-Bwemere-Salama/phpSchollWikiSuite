@@ -97,6 +97,16 @@ $classe = [
 
 ];
 
-echo $classe[1]['notes'][2]
+// echo $classe[1]['notes'][2]
+
+$noteC = readline('Entrez votre note:');
+if ($noteC >= 10) {
+    # code...
+    echo 'Bravo vous avez la moyenne';
+} else {
+    # code...
+    echo 'Dommage vous n\'avait pas la moyenne';
+}
+
 ?>
 
