@@ -8,7 +8,7 @@ $an_int = 12;
 echo gettype($a_bool);
 echo gettype($a_str);
 
-echo get_debug_type($an_int);
+// echo get_debug_type($an_int);
 
 if(is_int($an_int)){
     $an_int += 4;
@@ -28,4 +28,12 @@ if (is_string($a_bool)) {
 
 
 /* $a_bool = (is_string) ? echo "is tring" : echo "is not string" ;
-// echo"" ?>*/
+// echo"" */
+
+$decimalNumber = 1234;
+$octaleNumber = 01234;
+$hexadecimalNumber = 0x1A;
+$binarryNumber = 0b11111111;
+$decimalNUmber = 1_234_567;
+
+?>
