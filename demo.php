@@ -99,13 +99,19 @@ $classe = [
 
 // echo $classe[1]['notes'][2]
 
-$noteC = readline('Entrez votre note:');
-if ($noteC >= 10) {
+$action = (int)readline('Entrez votre note:(1: "ATTQUER", 2:"DEFFENDRE", 3:"Passer à Action")');
+if ($action === 1) {
     # code...
-    echo 'Bravo vous avez la moyenne';
-} else {
+    echo 'J\'attaque!';
+}elseif($action === 2){
+    echo 'Je défends';
+}
+elseif($action === 3){
+    echo 'Je ne fais Absolument rien';
+}
+else {
     # code...
-    echo 'Dommage vous n\'avait pas la moyenne';
+    echo 'Commande INconnnue';
 }
 
 ?>
