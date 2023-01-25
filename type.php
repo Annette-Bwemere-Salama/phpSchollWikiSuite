@@ -36,4 +36,10 @@ $hexadecimalNumber = 0x1A;
 $binarryNumber = 0b11111111;
 $decimalNUmber = 1_234_567;
 
+$prenom = "Annette";
+$nom = "Bwemere";
+
+echo $prenom;
+
+
 ?>
