@@ -99,37 +99,62 @@ $classe = [
 
 // echo $classe[1]['notes'][2]
 
-$action = (int)readline('Entrez votre note:(1: "ATTQUER", 2:"DEFFENDRE", 3:"Passer à Action")');
+// $action = (int)readline('Entrez votre note:(1: "ATTQUER", 2:"DEFFENDRE", 3:"Passer à Action")');
 
 
-switch($action){
-    case 1:
-        echo 'J\'Attaque !';
-        break;
-    case 2:
-        echo 'Je Défend';
-        break;
-     case 3:
-            echo 'Je ne fait Absolument Rien';
-            break;
-    default:
-        echo 'Commande Inconuue';
 
-}
+// if ($action === 1) {
+//     # code...
+//     echo 'J\'attaque!';
+// }elseif($action === 2){
+//     echo 'Je défends';
+// }
+// elseif($action === 3){
+//     echo 'Je ne fais Absolument rien';
+// }
+// else {
+//     # code...
+//     echo 'Commande INconnnue';
+// }
 
-if ($action === 1) {
+
+// switch($action){
+//     case 1:
+//         echo 'J\'Attaque !';
+//         break;
+//     case 2:
+//         echo 'Je Défend';
+//         break;
+//      case 3:
+//             echo 'Je ne fait Absolument Rien';
+//             break;
+//     default:
+//         echo 'Commande Inconuue';
+
+// }
+$chiffre = null;
+
+
+for ($i=0; $i < 10; $i++) { 
     # code...
-    echo 'J\'attaque!';
-}elseif($action === 2){
-    echo 'Je défends';
-}
-elseif($action === 3){
-    echo 'Je ne fais Absolument rien';
-}
-else {
-    # code...
-    echo 'Commande INconnnue';
+    echo "-$i \n";
 }
 
+// if ((9 <= $heure && $heure <= 12) || (14 <= $heure &&  $heure <= 17)) {
+//     # code...
+//     echo 'Le magasin sera fermé';
+// }else{
+//     echo 'Le magasin sera ouvert';
+// }
+
+/*
+VRAI && VRAIE = VRAIE,
+VRAIE && FAUX = FAUX,
+FAUX && FAUX = FAUX,
+
+VRAIE || VRAIE = VRAIE,
+VRAIE || FAUX = VRAIE,
+FAUX || FAUX = FAUX
+*/
 ?>
 
