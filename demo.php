@@ -1,19 +1,19 @@
 <?php
-    $prenom = "Annette";
-    $nom = "Bwemere";
-    $note1 = 10;
-    $note2 = 20;
-    $moyenne = ($note1 + $note2) / 2;
-    // echo "\nBonjour $prenom\n$nom Vous avez eu $moyenne"
-$mon_identité = [
-    "nom" => "Annette",
-    "prenom" => "Bwemere",
-    "postnom" => "Salama",
-    "Age" => 20,
-    "genre"=>"feminin",
-    "nationalité"=>"congolaise",
+//     $prenom = "Annette";
+//     $nom = "Bwemere";
+//     $note1 = 10;
+//     $note2 = 20;
+//     $moyenne = ($note1 + $note2) / 2;
+//     // echo "\nBonjour $prenom\n$nom Vous avez eu $moyenne"
+// $mon_identité = [
+//     "nom" => "Annette",
+//     "prenom" => "Bwemere",
+//     "postnom" => "Salama",
+//     "Age" => 20,
+//     "genre"=>"feminin",
+//     "nationalité"=>"congolaise",
     
-];
+// ];
 
 
 // $ecrassement = [
@@ -83,19 +83,19 @@ $mon_identité = [
 // echo $eleve['prenom'] . ' ' . $eleve['nom'];
 
 
-$classe = [
-    [
-        'nom' => 'Annete',
-        'Prenom' => 'Bwemere',
-        'notes' => [16, 12, 17],
-    ],
-    [
-        'nom' => 'Arick',
-        'Prenom' => 'Bulakali',
-        'notes' => [12, 10, 11]
-    ]
+// $classe = [
+//     [
+//         'nom' => 'Annete',
+//         'Prenom' => 'Bwemere',
+//         'notes' => [16, 12, 17],
+//     ],
+//     [
+//         'nom' => 'Arick',
+//         'Prenom' => 'Bulakali',
+//         'notes' => [12, 10, 11]
+//     ]
 
-];
+// ];
 
 // echo $classe[1]['notes'][2]
 
@@ -157,19 +157,25 @@ VRAIE || FAUX = VRAIE,
 FAUX || FAUX = FAUX
 */
 
-$notes = [10, 15, 16];
-$eleves = [
-    'cm2' => ['Annette', 'Marc', 'Jane', 'Marion'],
-    'cm1' => ['Emilie', 'Marcelin']
-];
+// $notes = [10, 15, 16];
+// $eleves = [
+//     'cm2' => ['Annette', 'Marc', 'Jane', 'Marion'],
+//     'cm1' => ['Emilie', 'Marcelin']
+// ];
 
-foreach ($eleves as$classe => $listEleve){
-    echo "la classe $classe: \n";
-    foreach($listEleve as $eleves){
-        echo "- $eleves\n";
-    }
+// foreach ($eleves as$classe => $listEleve){
+//     echo "la classe $classe: \n";
+//     foreach($listEleve as $eleves){
+//         echo "- $eleves\n";
+//     }
 
-    echo "\n";
-}
+//     echo "\n";
+// }
+
+//redLine
+
+
+$variable = readline();
+print_r(($variable));
 ?>
 
