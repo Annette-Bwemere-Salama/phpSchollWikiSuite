@@ -175,7 +175,17 @@ FAUX || FAUX = FAUX
 //redLine
 
 
-$variable = readline();
-print_r(($variable));
+// $variable = readline();
+// print_r(($variable));
+
+
+$mot = readline('Veuillez entrer le mot');
+$reverseL = strrev($mot);
+
+if($mot === $reverseL){
+    echo 'Ce mot est palidrome';
+}else{
+    'Ce mot n\'est pas un palidrome';
+}
 ?>
 
