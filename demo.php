@@ -180,7 +180,7 @@ FAUX || FAUX = FAUX
 
 
 $mot = readline('Veuillez entrer le mot');
-$reverseL = strrev($mot);
+$reverseL = strtolower(strrev($mot));
 
 if($mot === $reverseL){
     echo 'Ce mot est palidrome';
