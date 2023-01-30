@@ -132,13 +132,13 @@ $classe = [
 //         echo 'Commande Inconuue';
 
 // }
-$chiffre = null;
+// $chiffre = null;
 
 
-for ($i=0; $i < 10; $i++) { 
-    # code...
-    echo "-$i \n";
-}
+// for ($i=0; $i < 10; $i++) { 
+//     # code...
+//     echo "-$i \n";
+// }
 
 // if ((9 <= $heure && $heure <= 12) || (14 <= $heure &&  $heure <= 17)) {
 //     # code...
@@ -156,5 +156,20 @@ VRAIE || VRAIE = VRAIE,
 VRAIE || FAUX = VRAIE,
 FAUX || FAUX = FAUX
 */
+
+$notes = [10, 15, 16];
+$eleves = [
+    'cm2' => ['Annette', 'Marc', 'Jane', 'Marion'],
+    'cm1' => ['Emilie', 'Marcelin']
+];
+
+foreach ($eleves as$classe => $listEleve){
+    echo "la classe $classe: \n";
+    foreach($listEleve as $eleves){
+        echo "- $eleves\n";
+    }
+
+    echo "\n";
+}
 ?>
 
