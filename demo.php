@@ -179,13 +179,14 @@ FAUX || FAUX = FAUX
 // print_r(($variable));
 
 
-$mot = readline('Veuillez entrer le mot');
-$reverseL = strtolower(strrev($mot));
+// $mot = readline('Veuillez entrer le mot');
+// $reverseL = strtolower(strrev($mot));
 
-if(strtolower($mot)=== $reverseL){
-    echo 'Ce mot est palidrome';
-}else{
-    'Ce mot n\'est pas un palidrome';
-}
+// if(strtolower($mot)=== $reverseL){
+//     echo 'Ce mot est palidrome';
+// }else{
+//     'Ce mot n\'est pas un palidrome';
+// }
+
 ?>
 
