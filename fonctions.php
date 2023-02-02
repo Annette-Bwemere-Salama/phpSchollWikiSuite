@@ -27,10 +27,11 @@
 
 $insultes = ['merde', 'con', 'baiseur de pote'];
 $phrase = readline("Entrez une phrase :");
-foreach($insultes as $insulte){
-    $replace = str_repeat('*', strlen($insulte));
-    $phrase = str_replace($insulte, $replace, $phrase);
-}
+// foreach($insultes as $insulte){
+//     $replace = str_repeat('*', strlen($insulte));
+//     $phrase = str_replace($insulte, $replace, $phrase);
+// }
+$phrase = str_replace($insultes, ['******', '****'], $phrase);
 
 echo $phrase;
 ?>
