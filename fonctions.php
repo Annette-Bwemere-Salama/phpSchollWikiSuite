@@ -12,16 +12,25 @@
 // print_r($notesReverse);
 // echo "Vous avez" . round($sum / $count, 2) . "de moyenne";
 
-while(true){
-    $mot = readline('Entrez votre mot:');
-    if($mot === ""){
-        exit("Fin du programme");
-    }
-    $renverse = strrev($mot);
-    if(strtolower($mot) === $renverse){
-        echo "Ce mot est un plalindrome";
-    }else{
-        echo "c'est mot ne pas palidrome";
-    }
+// while(true){
+//     $mot = readline('Entrez votre mot:');
+//     if($mot === ""){
+//         exit("Fin du programme");
+//     }
+//     $renverse = strrev($mot);
+//     if(strtolower($mot) === $renverse){
+//         echo "Ce mot est un plalindrome";
+//     }else{
+//         echo "c'est mot ne pas palidrome";
+//     }
+// }
+
+$insultes = ['merde', 'con', 'baiseur de pote'];
+$phrase = readline("Entrez une phrase :");
+foreach($insultes as $insulte){
+    $replace = str_repeat('*', strlen($insulte));
+    $phrase = str_replace($insulte, $replace, $phrase);
 }
+
+echo $phrase;
 ?>
