@@ -28,7 +28,8 @@
 $insultes = ['merde', 'con', 'baiseur de pote'];
 $asterisques = [];
 foreach ($insultes as $insulte) {
-    $asterisques[] = str_repeat('*', strlen($insulte));
+    $lettre = substr($insulte, 0, 1);
+    $asterisques[] =$lettre . str_repeat('*', strlen($insulte) -1);
 }
 $phrase = readline("Entrez une phrase :");
 $phrase = str_replace($insultes, $asterisques, $phrase);
