@@ -1,13 +1,16 @@
-<?php 
+<?php
 
-function bonjour ($prenom = null){
+
+$nom = "Doe";
+function bonjour ($prenom = null ,$nom = null){
+    global $nom;
     if($prenom === null){
         return "Bonjour\n";
     }
-    return 'Bonjour' . $prenom . "\n";
+    return 'Bonjour' . $prenom . " " . $nom . "\n";
 }
 ;
-echo bonjour();
-echo bonjour("Annette Bwemere");
+
+echo bonjour("Annette", $nom);
 
 ?>
