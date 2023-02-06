@@ -37,6 +37,7 @@ function repondre_oui_nom($phrase){
                   break;
 
             }
+            echo "Veuillez entrer l'heure d'ouverture valable";
       }
       ;
 
@@ -46,6 +47,8 @@ function repondre_oui_nom($phrase){
             if($fermeture >= 0 && $fermeture <= 23 && $fermeture > $ouverture){
                   break;
             }
+            "\n";
+            echo "Veuillez enter l'heure de fermeture valable s'il vous plait";
       }
       return [$ouverture, $fermeture];
 }
