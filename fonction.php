@@ -1,4 +1,5 @@
 <?php
+// declare(strict_stypes=1);
 
 
 // $nom = "Doe";
@@ -54,7 +55,7 @@ function repondre_oui_nom($phrase){
 }
 ;
 
-function demander_creneauxR ($phrase = "Veuillez entrer vos crenaux"){
+function demander_creneaux ( string $phrase = "Veuillez entrer vos crenaux"){
       $creneaux = [];
       $continuer = true;
       while($continuer){
@@ -64,12 +65,13 @@ function demander_creneauxR ($phrase = "Veuillez entrer vos crenaux"){
       return $creneaux;
 }
 
+ 
 
 // $resultat = repondre_oui_nom("Voulez vous continuer?");
-$creneaux = demander_creneau();
+// $creneaux = demander_creneau();
 $creneaux2 = demander_creneau("Veuillez entrer votre crenaux");
 
-var_dump($creneaux, $creneaux2);
+var_dump($creneaux);
  
 
 
