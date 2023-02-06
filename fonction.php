@@ -54,11 +54,24 @@ function repondre_oui_nom($phrase){
 }
 ;
 
+function demander_creneauxR ($phrase = "Veuillez entrer vos crenaux"){
+      $creneaux = [];
+      $continuer = true;
+      while($continuer){
+            $creneaux[] = demander_creneau();
+            $continuer = repondre_oui_nom("Voulez vous continuer?");
+      }
+      return $creneaux;
+}
+
+
 // $resultat = repondre_oui_nom("Voulez vous continuer?");
 $creneaux = demander_creneau();
 $creneaux2 = demander_creneau("Veuillez entrer votre crenaux");
 
 var_dump($creneaux, $creneaux2);
+ 
+
 
 
 ?>
